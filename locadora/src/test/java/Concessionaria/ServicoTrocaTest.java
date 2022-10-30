@@ -9,12 +9,12 @@ public class ServicoTrocaTest {
     @Test
     public void deveAprovarTroca() {
         IServico servico = ServicoFactory.obterServico("Troca");
-        assertEquals("Troca Aprovada", servico.aprovado());
+        assertEquals("Troca aprovada!", servico.aprovado());
     }
 
     @Test
     public void deveReprovarTroca() {
         IServico servico = ServicoFactory.obterServico("Troca");
-        assertEquals("Troca Recusada, pois o limite do prazo foi excedido", servico.reprovado());
+        assertEquals("Troca recusada!", servico.reprovado());
     }
 }

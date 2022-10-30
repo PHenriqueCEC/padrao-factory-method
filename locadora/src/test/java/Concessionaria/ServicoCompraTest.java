@@ -13,7 +13,7 @@ public class ServicoCompraTest {
     }
 
     @Test
-    public void deveReprovarVenda() {
+    public void deveReprovarCompra() {
         IServico servico = ServicoFactory.obterServico("Compra");
         assertEquals("Compra reprovada!", servico.reprovado());
     }
